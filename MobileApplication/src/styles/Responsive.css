@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .navbar__links {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    main {
+      padding: 1rem;
+    }
+  }
+  

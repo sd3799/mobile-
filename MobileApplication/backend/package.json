@@ -1,0 +1,14 @@
+
+{
+    "name": "andi-fullstack-app",
+    "version": "1.0.0",
+    "scripts": {
+      "client": "npm start --prefix client",
+      "server": "nodemon backend/src/server.js",      
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "devDependencies": {
+      "concurrently": "^8.0.0"
+    }
+  }
+  

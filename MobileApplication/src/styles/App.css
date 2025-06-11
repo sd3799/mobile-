@@ -1,0 +1,123 @@
+/* Global reset & variables */
+:root {
+    --primary: #0b5ed7;
+    --dark: #222;
+    --light: #fff;
+    --grey: #f8f9fa;
+    --radius: 6px;
+    --max-w: 1200px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background: var(--grey);
+    color: var(--dark);
+  }
+  
+  main {
+    max-width: var(--max-w);
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: var(--light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar__logo {
+    height: 40px;
+  }
+  
+  .navbar__links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar__link {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+  }
+  
+  .navbar__link.active {
+    color: var(--primary);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--light);
+    margin-top: 3rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Home banner */
+  .home__banner {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+  }
+  
+  .contact-form button {
+    background: var(--primary);
+    color: var(--light);
+    border: none;
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+  
+  .status {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Products grid */
+  .products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Simple sections */
+  section > h1 {
+    margin-bottom: 1rem;
+  }
+  
